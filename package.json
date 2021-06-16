@@ -23,5 +23,8 @@
   "homepage": "https://github.com/vladdekhanov/rocketlist#readme",
   "devDependencies": {
     "@vercel/node": "^1.11.1"
+  },
+  "dependencies": {
+    "nodemailer": "^6.6.1"
   }
 }
