@@ -16,7 +16,7 @@ export default async(request: VercelRequest, response: VercelResponse) => {
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: '"Fred Foo 👻" <foo@example.com>', // sender address
+        from: 'vlad@rocketlist.dev', // sender address
         to: "vladdexx@yandex.ru", // list of receivers
         subject: "Hello ✔", // Subject line
         text: "Hello world?", // plain text body
