@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/vladdekhanov/rocketlist/issues"
   },
-  "homepage": "https://github.com/vladdekhanov/rocketlist#readme"
+  "homepage": "https://github.com/vladdekhanov/rocketlist#readme",
+  "devDependencies": {
+    "@vercel/node": "^1.11.1"
+  }
 }
