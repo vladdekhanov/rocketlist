@@ -4,18 +4,13 @@ import nodemailer from 'nodemailer';
 export default async(request: VercelRequest, response: VercelResponse) => {
     const { name = 'World' } = request.query
 
-    // Generate test SMTP service account from ethereal.email
-    // Only needed if you don't have a real mail account for testing
-    let testAccount = await nodemailer.createTestAccount();
-
-    // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
-        port: 587,
-        secure: false, // true for 465, false for other ports
+        host: "smtp-pulse.com",
+        port: 465,
+        secure: true,
         auth: {
-            user: testAccount.user, // generated ethereal user
-            pass: testAccount.pass, // generated ethereal password
+            user: "vladdexx@yandex.ru",
+            pass: "g3jQDLa5TrSGJEc",
         },
     });
 
